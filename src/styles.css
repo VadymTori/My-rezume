@@ -1,0 +1,258 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,cyrillic);
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  margin:0;
+  padding:0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+/* demo контейнер */
+.demo {
+    max-width: 1024px;
+    padding: 10 0px;
+    margin: 5% 0%;
+}
+/* скрываем чекбоксы и блоки с содержанием */
+.hide,
+.hide + label ~ div {
+    display: none;
+}
+/* вид текста label */
+.hide + label {
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    display: inline-block;
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: red;
+    border-bottom: 0;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    display: block; 
+    background: #efefef;
+    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #7d8e8f;
+    margin-left: 20px;
+    padding: 10px;
+    /* чуточку анимации при появлении */
+     -webkit-animation:fade ease-in 0.5s; 
+     -moz-animation:fade ease-in 0.5s;
+     animation:fade ease-in 0.5s; 
+}
+/* анимация при появлении скрытых блоков */
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }   
+}
+.hide + label:before {
+    background-color: #1e90ff;
+    color: #fff;
+    content: "\002B";
+    display: block;
+    float: left;
+    font-size: 14px; 
+    font-weight: bold;
+    height: 16px;
+    line-height: 16px;
+    margin: 3px 5px;
+    text-align: center;
+    width: 16px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.hide:checked + label:before {
+    content: "\2212";
+}*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #f5f7fa;
+    padding-left: 20px;
+    scroll-padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: Montserrat;
+
+}
+.wrapper{
+    background: #ffffff;
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+}
+.sidebar{
+    background: #1e2939;
+    width: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.photo{
+    width: 370px;
+}
+.info-container{
+    padding-bottom: 110px;
+    padding-top: 110px;
+    padding-right: 90px;
+    padding-left: 90px;
+}
+.Contacts-container{
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-bottom: 60px;
+    margin-right: 40px;
+}
+.contact-title{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #ffffff;;
+    margin-bottom: 20px;
+}
+.contacts-link{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #4b5460;
+}
+.contatcs-type{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #FFF;
+    margin-right: 10px;
+}
+.skills-title{
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    margin-left: 0px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+.skill-item{
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    color: #b95717;
+}
+.skills-container{
+    margin-top: 55px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 55px;
+}
+.skills-white-item{
+    color: #fafafb;
+}
+.front-end{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 23px;
+}
+.name{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 89px;
+}
+.discript{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 65px;
+}
+.Projects-title{
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    margin-top: 55px;
+}
+.project-links{
+    color: #595959;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.proj-item{
+    color: #595959;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.project-item{
+    font-weight: 700;
+    margin-left: 15px;
+}
+.project-dots{
+    font-weight: 100;
+}
+.project-container{
+    margin-bottom: 55px;
+}
+.work-name{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+.work-time{
+    color: #a8a8a8;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.work-duty{
+    color: #595959;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+ 
+}
+.orange-item{
+    color: #ff9149;
+}
+.facult{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.black{
+    color: black;
+}
+.margin-top-bot{
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
