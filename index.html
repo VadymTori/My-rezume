@@ -1,265 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script> 
-        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rezume</title>
-        <link rel="stylesheet" href="./src/styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="icon" href="/favicon.png" type="image/png">
-    </head>
-    <body>
-        <div class="wrapper"><!--Main container  -->
-            <aside class="sidebar">
-                <img class="photo" src="/img/45219037_548815748904233_4950011454305599488_o.jpg" alt="My photo">                      
-                <div class="Contacts-container"><!-- Contacts container -->
-                    <h3 class="contact-title">Contacts</h3>
-                    <div>
-                        <span class="contatcs-type"></span> <a class="contacts-link" href="tel:380631679754">     +3(80) 63-167-97-54</a>
-                    </div>
-                    <div>
-                        <span class="contatcs-type"></span> <a class="contacts-link" href="tel:380631679754">     +1(443) 858-70-99</a>
-                    </div>
-                    <div>
-                        <span class="contatcs-type">E:</span> <a class="contacts-link" href=mailto:"ivanovvad90@gmail.com">ivanovvad90@gmail.com</a> 
-                    </div>
-                    <br>
-                    <a href="https://telegram.me/VadymIvanof">
-                        <img width="40px" src="img/teleg.jpg" alt="telegram link">
-                      </a>
-                      <a href="viber://chat?number=%2B380631679754">
-                        <img width="37px" src="img/viber.jpg" alt="viber link">
-                      </a>
-                      <a href="https://wa.me/380631679754">
-                        <img width="37px" src="img/what.png" alt="whatsup link">
-                      </a>
-                    </a>
-                    <a href="https://www.messenger.com/t/vadim.ivanof.5">
-                      <img width="37px" src="img/msg.png" alt="messenger link">
-                    </a>
-                </div>                        
-                <div class="skills-container"><!-- Tech skills container  -->
-                    <h3 class="skills-title">Hard skills</h3>
-                    <ul>
-                        <li class="skill-item"><span class="skills-white-item">HTML</span></li>
-                        <li class="skill-item"><span class="skills-white-item">CSS</span></li>
-                        <li class="skill-item"><span class="skills-white-item">JavaScript</span></li>
-                        <li class="skill-item"><span class="skills-white-item">Python (basic)</span></li>
-                        <li class="skill-item"><span class="skills-white-item">Legal document creation</span></li>
-                        <li class="skill-item"><span class="skills-white-item">MS Excel</span></li>
-                        <li class="skill-item"><span class="skills-white-item">Jira</span></li>
-                        <li class="skill-item"><span class="skills-white-item">Git</span></li>
-                        <li class="skill-item"><span class="skills-white-item">MySQL</span></li>
-                        <li class="skill-item"><span class="skills-white-item">Postman</span></li>
-                        <li class="skill-item"><span class="skills-white-item">Android Studio</span></li>
-                        <li class="skill-item"><span class="skills-white-item">Fiddler</span></li>
-                        <li class="skill-item"><span class="skills-white-item">Visual studio code</span></li>
-                        <li class="skill-item"><span class="skills-white-item">VirtualBox</span></li>
-                        <li class="skill-item"><span class="skills-white-item">Cisco Packet Tracer</span></li>
-                        <li class="skill-item"><span class="skills-white-item">Linux\Ubuntu</span></li>
-                    </ul>
-                </div>                       
-                <div class="skills-container"><!-- Soft skills container  -->
-                    <h3 class="skills-title">Soft skills</h3>
-                    <ul>
-                        <li class="skill-item"><span class="skills-white-item">Business planning</span></li>
-                        <li class="skill-item"><span class="skills-white-item">Bug tracking</span></li>
-                        <li class="skill-item"><span class="skills-white-item">Easy learning</span></li>
-                        <li class="skill-item"><span class="skills-white-item">Attentiveness</span></li>
-                        <li class="skill-item"><span class="skills-white-item">Web Developing</span></li>
-                        <li class="skill-item"><span class="skills-white-item">Economic</span></li>
-                        <li class="skill-item"><span class="skills-white-item">Law</span></li>
-                        <li class="skill-item"><span class="skills-white-item">Teamwork</span></li>
-                        <li class="skill-item"><span class="skills-white-item">Communication</span></li>
-                        <li class="skill-item"><span class="skills-white-item">Problem Solving</span></li>
-                        <li class="skill-item"><span class="skills-white-item">Ability to Carry a Meeting and Make Deals</span></li>
-                    </ul>
-                </div>
-                <div class="skills-container"><!-- Language container  -->
-                    <h3 class="skills-title">Language</h3>
-                    <ul>
-                        <li class="skill-item"><span class="skills-white-item">English - B2</span></li>
-                        <li class="skill-item"><span class="skills-white-item">Ukraine - Native</span></li>
-                        <li class="skill-item"><span class="skills-white-item">Russian - Native</span></li>
-                        <li class="skill-item"><span class="skills-white-item">German  - A1</span></li>
-                    </ul>
-                </div>
-            </aside>
-            <dev class="info-container">
-                <div><!--about me container  -->
-                    <h2 class="front-end">QA Engineer & Web Developer</h2>
-                    <h1 class="name"> Vadym Ivanov </h1>
-                    <p class="discript">Hello, I'm from Ukraine! I finished manual QA course in IT school. I'm good at theory, got 2+ years practice, working with bug cycle, creation of test documentation, etc. At 2023 I started web devoloping at Fullstack Academy. I want to realize myself and use my skills in interesting company and projects.</p>
-                </div>                    
-                <div class="project-container"><!-- Project and codding container -->
-                    <h3 class="Projects-title">You can check my QA writting and Web Developing skills here: </h3>
-                    <ol>
-                        <li class="project-item"> 
-                            <a class="project-links" href="https://docs.google.com/spreadsheets/d/1QYMYiWRQvo09_31RqbfzxgcCKIZrhc835xGpmvL5Ps0/edit?usp=sharing">GoogleSheet link to "Hyperloop" test assignment</a>
-                            <span class="project-dots">. . .</span>
-                            <span>[</span><span class="proj-item">  Excel, CheckList, TestCase, Bug(s)</span><span>]</span>
-                        </li>
-                        <li class="project-item"> 
-                            <a class="project-links" href="https://docs.google.com/spreadsheets/d/1i2bNbhiqYpuSn6I5G2eLDy6_dmyUA5-YPlhnFnqz_1o/edit?usp=sharing">GoogleSheet link to "Voypost" test assignment</a>
-                            <span class="project-dots">. . .</span>
-                            <span>[</span><span class="proj-item">  Excel, CheckList, BugReport </span><span>]</span>
-                        </li>
-                        <li class="project-item"> 
-                            <a class="project-links" href="https://lovetocrochet.netlify.app//">https://lovetocrochet.netlify.app/</a>
-                            <span class="project-dots">. . . . . . . . . . . .</span>
-                            <span>[</span><span class="proj-item"> HTML, CSS (</span><span>]</span>
-                        </li>
-                        <li class="project-item">
-                            <a class="project-links" href="https://vadym-ivanov-rezume.netlify.app//">https://vadym-ivanov-rezume.netlify.app//</a>
-                            <span class="project-dots">. . .</span>
-                            <span>[</span><span class="proj-item"> HTML, CSS </span><span>]</span>
-                        </li>
-                        <li class="project-item">
-                            <a class="project-links" href="https://shaurma-shawerma.netlify.app//">https://shaurma-shawerma.netlify.app//</a>
-                            <span class="project-dots">. . . . . .</span>
-                            <span>[</span><span class="proj-item">HTML, CSS </span><span>]</span>
-                        </li>
-                        <li class="project-item">
-                            <a class="project-links" href="https://docs.google.com/spreadsheets/d/1VWGQfELc244bKAkDWw47fxdpuO5jmGXql971kOFpyeg/edit?usp=sharing">Example, how I use Excel formulas</a>
-                            <span class="project-dots">. . . . . .</span>
-                            <span>[</span><span class="proj-item">Excel </span><span>]</span>
-                        </li>
-                    </ol>
-                </div>                    
-                <div><!-- work expirience and education-->
-                    <h3 class="Projects-title">Work Experience</h3> 
-                    <div><!-- company zero-->
-                        <h4 class="work-name">uTest.com<span class="orange-item"> Freelance software test engineer</span> </h4>
-                        <span class="work-time">December 2021 - till today <span class="black">|</span><span>Remote</span>
-                        <ul class="margin-top-bot">
-                            <li class="work-duty">Conducted functional, usability, localization testing of websites and mobile applications</li>
-                            <li class="work-duty">Testing specific devices for narrow specialties</li>
-                            <li class="work-duty">Regression testing</li>
-                            <li class="work-duty">Creating test cases and test scenarios</li>               
-                        </ul>
-                    </div>   
-                    <div class="demo">
-                        <input class="hide" id="hd-1" type="checkbox">
-                        <label for="hd-1"><b>Click here to learn more about my work experience</b></label>
-                        <div>    
-                            <div class="demo"> <!-- Company one-->
-                                <input class="hide" id="hd-5" type="checkbox">
-                                <label for="hd-5"><h4 class="work-name">"Amazon"<span class="orange-item"> Amazon Safety Committee</span></h4></label>
-                                <div>
-                                    <span class="work-time">June 2022 - till today <span class="black">|</span><span>USA, FL</span>
-                                        <li class="work-duty">Check the quality of safety environment at the enterprise.</li>
-                                        <li class="work-duty">Completing safety checklist.</li>
-                                        <li class="work-duty">Work through problem-solving sceneries.</li>
-                                        <li class="work-duty">Use technology like smartphones and handheld devices to sort, scan, and prepare orders.</li>      
-                                        <li class="work-duty">Training new staff.</li> 
-                                        <li class="work-duty">Receive truck deliveries.</li> 
-                                        <li class="work-duty">Reporting issues giving priority and severity.</li> 
-                                        <li class="work-duty">Build, wrap, sort, and transport packages.</li>                  
-                                </div>
-        
-                            <br/>
-                        </div>                   
-                    <div class="demo"> <!-- Company two-->
-                        <input class="hide" id="hd-6" type="checkbox">
-                        <label for="hd-6"><h4 class="work-name">"D&Z Networks"<span class="orange-item"> Quality Check & audit</span></h4></label>
+
+<head>
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UKr Rezume</title>
+  <link rel="stylesheet" href="./src/styles.css">
+  <script src="src/react.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/favicon.png" type="image/png">
+</head>
+
+<body onload="openCity(event, 'London');">
+
+  <ul class="tab">
+    <li><a href="#" class="tablinks" onclick="openCity(event, 'London')">Main page</a></li>
+    <li><a href="#" class="tablinks" onclick="openCity(event, 'Paris')">Portfolio</a></li>
+    <li><a href="#" class="tablinks" onclick="openCity(event, 'Tokyo')">Download CV</a></li>
+  </ul>
+      <div id="London" class="tabcontent">
+  <div class="wrapper"><!--Main container  -->
+    <aside class="sidebar">
+        <img class="photo" src="/img/45219037_548815748904233_4950011454305599488_o.jpg" alt="My photo">                      
+        <div class="Contacts-container"><!-- Contacts container -->
+            <h3 class="contact-title">Contacts</h3>
+            <div>
+                <span class="contatcs-type"></span> <a class="contacts-link" href="tel:380631679754">     +3(80) 63-167-97-54</a>
+            </div>
+            <div>
+                <span class="contatcs-type"></span> <a class="contacts-link" href="tel:380631679754">     +1(443) 858-70-99</a>
+            </div>
+            <div>
+                <span class="contatcs-type">E:</span> <a class="contacts-link" href=mailto:"ivanovvad90@gmail.com">ivanovvad90@gmail.com</a> 
+            </div>
+            <br>
+            <a href="https://telegram.me/VadymIvanof">
+                <img width="40px" src="img/teleg.jpg" alt="telegram link">
+              </a>
+              <a href="viber://chat?number=%2B380631679754">
+                <img width="37px" src="img/viber.jpg" alt="viber link">
+              </a>
+              <a href="https://wa.me/380631679754">
+                <img width="37px" src="img/what.png" alt="whatsup link">
+              </a>
+            </a>
+            <a href="https://www.messenger.com/t/vadim.ivanof.5">
+              <img width="37px" src="img/msg.png" alt="messenger link">
+            </a>
+        </div>                        
+        <div class="skills-container"><!-- Tech skills container  -->
+            <h3 class="skills-title">Hard skills</h3>
+            <ul>
+                <li class="skill-item"><span class="skills-white-item">HTML</span></li>
+                <li class="skill-item"><span class="skills-white-item">CSS</span></li>
+                <li class="skill-item"><span class="skills-white-item">JavaScript</span></li>
+                <li class="skill-item"><span class="skills-white-item">Python (basic)</span></li>
+                <li class="skill-item"><span class="skills-white-item">Legal document creation</span></li>
+                <li class="skill-item"><span class="skills-white-item">MS Excel</span></li>
+                <li class="skill-item"><span class="skills-white-item">Jira</span></li>
+                <li class="skill-item"><span class="skills-white-item">Git</span></li>
+                <li class="skill-item"><span class="skills-white-item">MySQL</span></li>
+                <li class="skill-item"><span class="skills-white-item">Postman</span></li>
+                <li class="skill-item"><span class="skills-white-item">Android Studio</span></li>
+                <li class="skill-item"><span class="skills-white-item">Fiddler</span></li>
+                <li class="skill-item"><span class="skills-white-item">Visual studio code</span></li>
+                <li class="skill-item"><span class="skills-white-item">VirtualBox</span></li>
+                <li class="skill-item"><span class="skills-white-item">Cisco Packet Tracer</span></li>
+                <li class="skill-item"><span class="skills-white-item">Linux\Ubuntu</span></li>
+            </ul>
+        </div>                       
+        <div class="skills-container"><!-- Soft skills container  -->
+            <h3 class="skills-title">Soft skills</h3>
+            <ul>
+                <li class="skill-item"><span class="skills-white-item">Business planning</span></li>
+                <li class="skill-item"><span class="skills-white-item">Bug tracking</span></li>
+                <li class="skill-item"><span class="skills-white-item">Easy learning</span></li>
+                <li class="skill-item"><span class="skills-white-item">Attentiveness</span></li>
+                <li class="skill-item"><span class="skills-white-item">Web Developing</span></li>
+                <li class="skill-item"><span class="skills-white-item">Economic</span></li>
+                <li class="skill-item"><span class="skills-white-item">Law</span></li>
+                <li class="skill-item"><span class="skills-white-item">Teamwork</span></li>
+                <li class="skill-item"><span class="skills-white-item">Communication</span></li>
+                <li class="skill-item"><span class="skills-white-item">Problem Solving</span></li>
+                <li class="skill-item"><span class="skills-white-item">Ability to Carry a Meeting and Make Deals</span></li>
+            </ul>
+        </div>
+        <div class="skills-container"><!-- Language container  -->
+            <h3 class="skills-title">Language</h3>
+            <ul>
+                <li class="skill-item"><span class="skills-white-item">English - B2</span></li>
+                <li class="skill-item"><span class="skills-white-item">Ukraine - Native</span></li>
+                <li class="skill-item"><span class="skills-white-item">Russian - Native</span></li>
+                <li class="skill-item"><span class="skills-white-item">German  - A1</span></li>
+            </ul>
+        </div>
+    </aside>
+    <dev class="info-container">
+        <div><!--about me container  -->
+            <h2 class="front-end">QA Engineer & Web Developer</h2>
+            <h1 class="name"> Vadym Ivanov </h1>
+            <p class="discript">Hello, I'm from Ukraine! I finished manual QA course in IT school. I'm good at theory, got 2+ years practice, working with bug cycle, creation of test documentation, etc. At 2023 I started web devoloping at Fullstack Academy. I want to realize myself and use my skills in interesting company and projects.</p>
+        </div>                    
+                  
+        <div><!-- work expirience and education-->
+            <h3 class="Projects-title">Work Experience</h3> 
+            <div><!-- company zero-->
+                <h4 class="work-name">uTest.com<span class="orange-item"> Freelance software test engineer</span> </h4>
+                <span class="work-time">December 2021 - till today <span class="black">|</span><span>Remote</span>
+                <ul class="margin-top-bot">
+                    <li class="work-duty">Conducted functional, usability, localization testing of websites and mobile applications</li>
+                    <li class="work-duty">Testing specific devices for narrow specialties</li>
+                    <li class="work-duty">Regression testing</li>
+                    <li class="work-duty">Creating test cases and test scenarios</li>               
+                </ul>
+            </div>   
+            <div class="demo">
+                <input class="hide" id="hd-1" type="checkbox">
+                <label for="hd-1"><b>Click here to learn more about my work experience</b></label>
+                <div>    
+                    <div class="demo"> <!-- Company one-->
+                        <input class="hide" id="hd-5" type="checkbox">
+                        <label for="hd-5"><h4 class="work-name">"Amazon"<span class="orange-item"> Amazon Safety Committee</span></h4></label>
                         <div>
-                            <span class="work-time">March 2021 - November 2021 <span class="black">|</span><span>Remote</span>
-                            <li class="work-duty">As a member of quality department run test cases for medical drugs and report about all divergences.</li>
-                            <li class="work-duty">Working with reports in Google Sheet.Creating reports with Google Sheet and control of quality score.</li>
-                            <li class="work-duty">Consideration of claims.</li>
-                            <li class="work-duty">Taking a part in audit checking of our company.</li>
-                            <li class="work-duty">Verification of written prescriptions from a doctor to a patient of medicines in accordance with the requirements of digital and paper requirements.</li>      
-                            <li class="work-duty">Training new staff.</li> 
-                            <li class="work-duty">Auditing of company before insurance audit of pharmacy.</li>                   
+                            <span class="work-time">June 2022 - till today <span class="black">|</span><span>USA, FL</span>
+                                <li class="work-duty">Check the quality of safety environment at the enterprise.</li>
+                                <li class="work-duty">Completing safety checklist.</li>
+                                <li class="work-duty">Work through problem-solving sceneries.</li>
+                                <li class="work-duty">Use technology like smartphones and handheld devices to sort, scan, and prepare orders.</li>      
+                                <li class="work-duty">Training new staff.</li> 
+                                <li class="work-duty">Receive truck deliveries.</li> 
+                                <li class="work-duty">Reporting issues giving priority and severity.</li> 
+                                <li class="work-duty">Build, wrap, sort, and transport packages.</li>                  
                         </div>
 
                     <br/>
-                </div>                        
-                <div class="demo"><!-- company three -->
-                    <input class="hide" id="hd-2" type="checkbox">
-                    <label for="hd-2"><h4 class="work-name">"MP Universal LTD"<span class="orange-item"> Lawyer</span></h4></label>
-                    <div>
-                        <span class="work-time">May 2017 - May 2020 <span class="black">|</span><span>Odesa, Ukraine</span>
-                        <li class="work-duty">Maintaining business contracts at the enterprise.</li>
-                        <li class="work-duty">Testing and providing legal advice.</li>
-                        <li class="work-duty">Conducting pre-trial proceedings on insurance claims in Ukraine.</li>
-                        <li class="work-duty">Organization of the work process at the enterprise.</li>      
-                        <li class="work-duty">Training new staff.</li> 
-                        <li class="work-duty">Creating working Software for company using only Excel..</li> 
-                        <li class="work-duty">Testing everything is going fine and legal.</li> 
-                        <li class="work-duty">Replacement of any employee of the enterprise in force majeure circumstances.</li>               
-                    </div>
+                </div>                   
+            <div class="demo"> <!-- Company two-->
+                <input class="hide" id="hd-6" type="checkbox">
+                <label for="hd-6"><h4 class="work-name">"D&Z Networks"<span class="orange-item"> Quality Check & audit</span></h4></label>
+                <div>
+                    <span class="work-time">March 2021 - November 2021 <span class="black">|</span><span>Remote</span>
+                    <li class="work-duty">As a member of quality department run test cases for medical drugs and report about all divergences.</li>
+                    <li class="work-duty">Working with reports in Google Sheet.Creating reports with Google Sheet and control of quality score.</li>
+                    <li class="work-duty">Consideration of claims.</li>
+                    <li class="work-duty">Taking a part in audit checking of our company.</li>
+                    <li class="work-duty">Verification of written prescriptions from a doctor to a patient of medicines in accordance with the requirements of digital and paper requirements.</li>      
+                    <li class="work-duty">Training new staff.</li> 
+                    <li class="work-duty">Auditing of company before insurance audit of pharmacy.</li>                   
                 </div>
-                <div class="demo"><!-- company four -->
-                    <input class="hide" id="hd-3" type="checkbox">
-                    <label for="hd-3"><h4 class="work-name">"NOVA POSHTA"<span class="orange-item"> Quality Manager</span></h4></label>
-                    <div>
-                        <span class="work-time">August 2012 - March 2015 <span class="black">|</span><span>Odesa, Ukraine</span>
-                        <li class="work-duty">Testing employees for knowledge of the workflow</li>
-                        <li class="work-duty">Company software testing. The errors and bugs found- led to multiple updates and saved the company's funds due to the large amount of missing (including stolen) cargo. The introduction of innovations that developed the company in favor of simplified customer use.</li>
-                        <li class="work-duty">Taking control of quality post mail department working (like check-list, auditions, etc).</li>
-                        <li class="work-duty">Creating instructions and rules in the company</li>
-                        <li class="work-duty">Consideration of claims.</li>              
-                    </div>
-                </div>    
-                <div class="demo"><!-- company five -->
-                    <input class="hide" id="hd-4" type="checkbox">
-                    <label for="hd-4"><h4 class="work-name">LTD "Bank RS"<span class="orange-item"> Credit manager</span></h4></label>
-                    <div>
-                        <span class="work-time">August 2011 - October 2011 <span class="black">|</span><span>Odesa, Ukraine</span>
-                        <li class="work-duty">Use banking software to create a credit score for new customers.</li>
-                        <li class="work-duty">Consultations about bank credit programms.</li>
-                        <li class="work-duty">Searching for bugs in bank software successfully make a changings and updates for less defects.</li>            
-                    </div>
-                </div>  
+
+            <br/>
+        </div>                        
+        <div class="demo"><!-- company three -->
+            <input class="hide" id="hd-2" type="checkbox">
+            <label for="hd-2"><h4 class="work-name">"MP Universal LTD"<span class="orange-item"> Lawyer</span></h4></label>
+            <div>
+                <span class="work-time">May 2017 - May 2020 <span class="black">|</span><span>Odesa, Ukraine</span>
+                <li class="work-duty">Maintaining business contracts at the enterprise.</li>
+                <li class="work-duty">Testing and providing legal advice.</li>
+                <li class="work-duty">Conducting pre-trial proceedings on insurance claims in Ukraine.</li>
+                <li class="work-duty">Organization of the work process at the enterprise.</li>      
+                <li class="work-duty">Training new staff.</li> 
+                <li class="work-duty">Creating working Software for company using only Excel..</li> 
+                <li class="work-duty">Testing everything is going fine and legal.</li> 
+                <li class="work-duty">Replacement of any employee of the enterprise in force majeure circumstances.</li>               
             </div>
-            </div>                                                                  
-                    <div><!-- Education container -->
-                        <h3 class="Projects-title">Education</h3>
-                    </div>   
-                    <div>
-                        <h4 class="work-name"><span class="orange-item">Fullstack Academy</span></h4>
-                        <h5 class="facult">Web Developer</h5>
-                        <span class="work-time">February 2023 - October 2023 <span class="black">|</span><span>USA</span>
-                        <br>
-                        <a class="project-links" href="https://www.fullstackacademy.com/">Bootcamp website</a>
-                    </div>                    
-                    <div>
-                        <h4 class="work-name"><span class="orange-item">I.I. Mechnikov university</span></h4>
-                        <h5 class="facult">Law and economic</h5>
-                        <span class="work-time">September 2011 - June 2016 <span class="black">|</span><span>Ukraine</span>
-                        <br>
-                        <a class="project-links" href="https://onu.edu.ua/en/">University website</a>
-                    </div>
-                    <div>
-                        <h4 class="work-name"><span class="orange-item">Hillel IT school</span></h4>
-                        <h5 class="facult">Quality assurance engineer (manual)</h5>
-                        <span class="work-time">September 2021 - February 2022 <span class="black">|</span><span>Remote</span>
-                        <p>
-                        <a class="project-links" href="https://certificate.ithillel.ua/view/51169019">QA Manual certificate</a>
-                    </div>
-                    <div><!-- Resume -->
-                        <h3 class="Projects-title">Resume</h3>
-                    </div>                       
-                    <div>
-                        <h4 class="work-name"><span class="orange-item">and social profiles</span></h4>
-                        <p>
-                        <a class="project-links" href="https://my.indeed.com/p/vadymi-o0xfyei">Indeed profile</a>
-                        </p>
-                        <a class="project-links" href="https://www.linkedin.com/in/vadym-ivanov-99a860200/">Linkedin profile</a>
-                        </p>
-                        <a class="project-links" href="https://www.sololearn.com/profile/18374695">Sololearn profile</a>
-                        </p>
-                        <a class="project-links" href="https://github.com/VadymTori">Github profile</a>
-                    </div>
-                </div>
-                <br>
-                <a href="/CV/CV_QA_Vadym_Ivanov.pdf" download="">
-                    <button>Download CV in .pdf</button>
-                </a>
         </div>
-    </body>
-</html>
+        <div class="demo"><!-- company four -->
+            <input class="hide" id="hd-3" type="checkbox">
+            <label for="hd-3"><h4 class="work-name">"NOVA POSHTA"<span class="orange-item"> Quality Manager</span></h4></label>
+            <div>
+                <span class="work-time">August 2012 - March 2015 <span class="black">|</span><span>Odesa, Ukraine</span>
+                <li class="work-duty">Testing employees for knowledge of the workflow</li>
+                <li class="work-duty">Company software testing. The errors and bugs found- led to multiple updates and saved the company's funds due to the large amount of missing (including stolen) cargo. The introduction of innovations that developed the company in favor of simplified customer use.</li>
+                <li class="work-duty">Taking control of quality post mail department working (like check-list, auditions, etc).</li>
+                <li class="work-duty">Creating instructions and rules in the company</li>
+                <li class="work-duty">Consideration of claims.</li>              
+            </div>
+        </div>    
+        <div class="demo"><!-- company five -->
+            <input class="hide" id="hd-4" type="checkbox">
+            <label for="hd-4"><h4 class="work-name">LTD "Bank RS"<span class="orange-item"> Credit manager</span></h4></label>
+            <div>
+                <span class="work-time">August 2011 - October 2011 <span class="black">|</span><span>Odesa, Ukraine</span>
+                <li class="work-duty">Use banking software to create a credit score for new customers.</li>
+                <li class="work-duty">Consultations about bank credit programms.</li>
+                <li class="work-duty">Searching for bugs in bank software successfully make a changings and updates for less defects.</li>            
+            </div>
+        </div>  
+    </div>
+    </div>                                                                  
+            <div><!-- Education container -->
+                <h3 class="Projects-title">Education</h3>
+            </div>   
+            <div>
+                <h4 class="work-name"><span class="orange-item">Fullstack Academy</span></h4>
+                <h5 class="facult">Web Developer</h5>
+                <span class="work-time">February 2023 - October 2023 <span class="black">|</span><span>USA</span>
+                <br>
+                <a class="project-links" href="https://www.fullstackacademy.com/">Bootcamp website</a>
+            </div>                    
+            <div>
+                <h4 class="work-name"><span class="orange-item">I.I. Mechnikov university</span></h4>
+                <h5 class="facult">Law and economic</h5>
+                <span class="work-time">September 2011 - June 2016 <span class="black">|</span><span>Ukraine</span>
+                <br>
+                <a class="project-links" href="https://onu.edu.ua/en/">University website</a>
+            </div>
+            <div>
+                <h4 class="work-name"><span class="orange-item">Hillel IT school</span></h4>
+                <h5 class="facult">Quality assurance engineer (manual)</h5>
+                <span class="work-time">September 2021 - February 2022 <span class="black">|</span><span>Remote</span>
+                <p>
+                <a class="project-links" href="https://certificate.ithillel.ua/view/51169019">QA Manual certificate</a>
+            </div>
+            <div><!-- Resume -->
+                <h3 class="Projects-title">Resume</h3>
+            </div>                       
+            <div>
+                <h4 class="work-name"><span class="orange-item">and social profiles</span></h4>
+                <p>
+                <a class="project-links" href="https://my.indeed.com/p/vadymi-o0xfyei">Indeed profile</a>
+                </p>
+                <a class="project-links" href="https://www.linkedin.com/in/vadym-ivanov-99a860200/">Linkedin profile</a>
+                </p>
+                <a class="project-links" href="https://www.sololearn.com/profile/18374695">Sololearn profile</a>
+                </p>
+                <a class="project-links" href="https://github.com/VadymTori">Github profile</a>
+            </div>
+        </div>
+        <br>
+
+</div>
+</div>
+<div id="Paris" class="tabcontent">
+  <h3>Portfolio:</h3>
+  <div class="project-container"><!-- Project and codding container -->
+    <h3 class="Projects-title">You can check my QA writting and Web Developing skills here: </h3>
+    <ol>
+        <li class="project-item"> 
+            <a class="project-links" href="https://docs.google.com/spreadsheets/d/1QYMYiWRQvo09_31RqbfzxgcCKIZrhc835xGpmvL5Ps0/edit?usp=sharing">GoogleSheet link to "Hyperloop" test assignment</a>
+            <span class="project-dots">. . .</span>
+            <span>[</span><span class="proj-item">  Excel, CheckList, TestCase, Bug(s)</span><span>]</span>
+        </li>
+        <li class="project-item"> 
+            <a class="project-links" href="https://docs.google.com/spreadsheets/d/1i2bNbhiqYpuSn6I5G2eLDy6_dmyUA5-YPlhnFnqz_1o/edit?usp=sharing">GoogleSheet link to "Voypost" test assignment</a>
+            <span class="project-dots">. . .</span>
+            <span>[</span><span class="proj-item">  Excel, CheckList, BugReport </span><span>]</span>
+        </li>
+        <li class="project-item"> 
+            <a class="project-links" href="https://lovetocrochet.netlify.app//">https://lovetocrochet.netlify.app/</a>
+            <span class="project-dots">. . . . . . . . . . . .</span>
+            <span>[</span><span class="proj-item"> HTML, CSS </span><span>]</span>
+        </li>
+        <li class="project-item">
+            <a class="project-links" href="https://vadym-ivanov-rezume.netlify.app//">https://vadym-ivanov-rezume.netlify.app//</a>
+            <span class="project-dots">. . .</span>
+            <span>[</span><span class="proj-item"> HTML, CSS </span><span>]</span>
+        </li>
+        <li class="project-item">
+            <a class="project-links" href="https://shaurma-shawerma.netlify.app//">https://shaurma-shawerma.netlify.app//</a>
+            <span class="project-dots">. . . . . .</span>
+            <span>[</span><span class="proj-item">HTML, CSS </span><span>]</span>
+        </li>
+        <li class="project-item">
+            <a class="project-links" href="https://docs.google.com/spreadsheets/d/1VWGQfELc244bKAkDWw47fxdpuO5jmGXql971kOFpyeg/edit?usp=sharing">Example, how I use Excel formulas</a>
+            <span class="project-dots">. . . . . .</span>
+            <span>[</span><span class="proj-item">Excel </span><span>]</span>
+        </li>
+    </ol>
+</div>  
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Downloads</h3>
+  <p>Rezume:</p>
+  <a href="/CV/CV_QA_Vadym_Ivanov.pdf" download="">
+    <button>Download CV in .pdf</button>
+</a>
+</div>
+</body>
